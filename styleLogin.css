@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins";
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color:#009797;
+}
+p{
+    text-align: center;
+}
+a{
+    color:#009797;
+    font-weight: bold;
+}
+.container{
+    height: 400px;
+    width: 500px;
+    box-shadow: -10px 11px 20px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+}
+label{
+    display: block;
+    color: gray;
+    margin-top: 20px;
+    transition: color 0.3s
+}
+
+.input-container:focus-within label {
+    color: #009797;
+}
+
+#password,#email{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border:1px silver solid;
+    padding:10px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+input[type=submit]{
+    width: 100px;
+    height: 40px;
+    margin:20px 30px 30px 165px ;
+    background-color: #009797cb;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 0 7px 0 #009797;
+    color: azure;
+    font-size: 19px;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+input[type=submit]:active{
+    transform: translateY(8px);
+    box-shadow: 0 0 0;
+}
