@@ -60,23 +60,33 @@ label {
   color: black;
 }
 input[type="submit"] {
-  margin-left: 50%;
+  font-size: 18px;
+
+  margin-left: 35%;
   margin-top: 20px;
-  border-radius: 8px;
-  transform: translateX(-50%);
+  margin-bottom: 15px;
+
   width: 120px;
   height: 36px;
+
+  border-radius: 8px;
   border: none;
   outline: none;
   cursor: pointer;
-  font-size: 18px;
+
   background-color: black;
   color: whitesmoke;
-  transition: 0.3s;
-  margin-bottom: 15px;
+
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.1s linear;
 }
 input[type="submit"]:hover {
   opacity: 0.7;
+}
+input[type="submit"]:active{
+  transform: translateY(8px);
+  box-shadow: 0 0 0;
+
 }
 
 a {
